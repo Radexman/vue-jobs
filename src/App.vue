@@ -1,7 +1,15 @@
-<script setup></script>
+<script setup>
+import Navbar from './components/Navbar.vue'
+import Hero from './components/Hero.vue'
+import HomeCards from './components/HomeCards.vue'
+import JobListings from './components/JobListings.vue'
+</script>
 
 <template>
-  <h1>Vue Jobs</h1>
+  <Navbar />
+  <Hero />
+  <HomeCards />
+  <JobListings />
 </template>
 
 <style scoped></style>
