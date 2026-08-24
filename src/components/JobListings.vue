@@ -1,6 +1,7 @@
 <script setup>
 import { reactive, ref, defineProps, onMounted } from 'vue';
 import { RouterLink } from 'vue-router';
+import { PulseLoader } from 'vue-spinner';
 import axios from 'axios';
 
 import JobListing from './JobListing.vue';
@@ -20,7 +21,7 @@ const state = reactive({
 
 onMounted(async () => {
   try {
-    const response = await axios.get('http://localhost:5000/jobs');
+    const response = await axios.get('/api/jobs');
     state.jobs = response.data;
   } catch (error) {
     console.error('Error fetching jobs', error);
@@ -34,7 +35,10 @@ onMounted(async () => {
   <section class="bg-blue-50 px-4 py-10">
     <div class="container-xl m-auto lg:container">
       <h2 class="mb-6 text-center text-3xl font-bold text-green-500">Browse Jobs</h2>
-      <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+      <div v-if="state.isLoading" class="py-6 text-center text-gray-500">
+        <PulseLoader />
+      </div>
+      <div v-else class="grid grid-cols-1 gap-6 md:grid-cols-3">
         <JobListing
           v-for="job in state.jobs.slice(0, limit || state.jobs.length)"
           :key="job.id"

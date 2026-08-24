@@ -83,6 +83,35 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
+    },
+    {
+      "type": "Full-Time",
+      "title": "Test Job",
+      "location": "Warsaw",
+      "description": "Description",
+      "salary": "$150K - $175K",
+      "company": {
+        "name": "Acme",
+        "description": "Description",
+        "contactEmail": "acme@gmail.com",
+        "contactPhone": "555555555"
+      },
+      "id": "KICkMSJnUDY"
+    },
+    {
+      "type": "Part-Time",
+      "title": "Heather Parsons",
+      "location": "Quo excepteur vel se",
+      "description": "Tempora voluptatum d",
+      "salary": "$125K - $150K",
+      "company": {
+        "name": "Herrera Hensley Associates",
+        "description": "Lorem eius elit con",
+        "contactEmail": "benytu@mailinator.com",
+        "contactPhone": "+1 (774) 761-6912"
+      },
+      "id": "V3OBYxnJnyM"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
