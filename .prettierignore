@@ -1,0 +1,14 @@
+node_modules/
+dist/
+dist-ssr/
+coverage/
+*.local
+
+# Lockfiles are generated
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Caches
+.eslintcache
+.vite/

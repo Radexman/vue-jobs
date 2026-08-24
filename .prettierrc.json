@@ -1,8 +1,36 @@
 {
   "$schema": "https://json.schemastore.org/prettierrc",
-  "semi": false,
+  "semi": true,
   "singleQuote": true,
+  "jsxSingleQuote": false,
+  "quoteProps": "as-needed",
   "printWidth": 100,
+  "tabWidth": 2,
+  "useTabs": false,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "bracketSameLine": false,
+  "arrowParens": "always",
+  "objectWrap": "preserve",
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "vueIndentScriptAndStyle": false,
+  "singleAttributePerLine": false,
   "plugins": ["prettier-plugin-tailwindcss"],
-  "tailwindStylesheet": "./src/assets/main.css"
+  "tailwindStylesheet": "./src/assets/main.css",
+  "overrides": [
+    {
+      "files": ["*.json", "*.jsonc", "*.md", "*.yml", "*.yaml"],
+      "options": {
+        "printWidth": 80
+      }
+    },
+    {
+      "files": ["*.md"],
+      "options": {
+        "proseWrap": "preserve",
+        "embeddedLanguageFormatting": "auto"
+      }
+    }
+  ]
 }

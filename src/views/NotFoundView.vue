@@ -1,6 +1,6 @@
 <script setup>
-import { RouterLink } from 'vue-router'
-import { ExclamationTriangle } from '@primeicons/vue'
+import { RouterLink } from 'vue-router';
+import { ExclamationTriangle } from '@primeicons/vue';
 </script>
 
 <template>

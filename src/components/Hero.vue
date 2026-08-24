@@ -1,5 +1,5 @@
 <script setup>
-import { defineProps } from 'vue'
+import { defineProps } from 'vue';
 
 defineProps({
   title: {
@@ -10,7 +10,7 @@ defineProps({
     type: String,
     default: 'Find the Vue job that fits your skills and needs',
   },
-})
+});
 </script>
 
 <template>
